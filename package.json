@@ -1,0 +1,28 @@
+{
+  "name": "smart-contract-practice",
+  "version": "1.0.0",
+  "description": "Practicing with smart contract and Ethereum network using solidity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanhnguyennguyen/smart-contract-practice.git"
+  },
+  "keywords": [
+    "solidity",
+    "smart",
+    "contract",
+    "NguyenNguyen"
+  ],
+  "author": "NguyenNguyen (nguyenbk92@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thanhnguyennguyen/smart-contract-practice/issues"
+  },
+  "homepage": "https://github.com/thanhnguyennguyen/smart-contract-practice#readme",
+  "dependencies": {
+    "solc": "^0.4.24"
+  }
+}
