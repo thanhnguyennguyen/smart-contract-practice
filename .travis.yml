@@ -3,4 +3,8 @@ node_js:
   - "8"
 script:
   - npm install web3@1.0.0-beta.26
-  - npm run test
+  - npm run test-coverage
+
+after_success:
+  - npm install codecov
+  - codecov
