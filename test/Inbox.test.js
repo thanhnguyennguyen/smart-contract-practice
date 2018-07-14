@@ -26,5 +26,10 @@ describe('Get Accounts', () => {
 
     // make sure inbox.options.address is not undefined
     assert.ok(inbox.options.address);
-  })
+  });
+
+  it('test default message', async() => {
+    const message = await inbox.methods.message().call();
+    assert.equal(message, 'Hello Solidity');
+  });
 });
