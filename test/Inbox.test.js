@@ -5,6 +5,7 @@ const provider = ganache.provider();
 const web3 = new Web3(provider);
 
 const {interface, bytecode} = require('../compile');
+const INITIAL_MESSAGE = 'Hello Solidity';
 let accounts;
 let inbox;
 beforeEach(async() => {
@@ -13,7 +14,7 @@ beforeEach(async() => {
 
   // use one of those accounts to deploy the contracts
   inbox = await new web3.eth.Contract(JSON.parse(interface))
-  .deploy({data: bytecode, arguments: ['Hello Solidity']})
+  .deploy({data: bytecode, arguments: [INITIAL_MESSAGE]})
   .send({from: accounts[0], gas: '1000000'})
 
   inbox.setProvider(provider);
@@ -30,6 +31,6 @@ describe('Get Accounts', () => {
 
   it('test default message', async() => {
     const message = await inbox.methods.message().call();
-    assert.equal(message, 'Hello Solidity');
+    assert.equal(message, INITIAL_MESSAGE);
   });
 });
