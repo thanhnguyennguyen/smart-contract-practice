@@ -1,4 +1,5 @@
-Smart Contract practices<br/>
+<b>Smart Contract practices</b>
+
 Scrutinizer scores<br/>
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/thanhnguyennguyen/smart-contract-practice/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/thanhnguyennguyen/smart-contract-practice/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/thanhnguyennguyen/smart-contract-practice/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/thanhnguyennguyen/smart-contract-practice/?branch=master)
