@@ -17,8 +17,11 @@ beforeEach(async() => {
 });
 
 describe('Get Accounts', () => {
-  it('deploy a contract', () => {
+  it('is deployment success', () => {
     // console.log(accounts);
-    console.log(inbox);
+    // console.log(inbox);
+
+    // make sure inbox.options.address is not undefined
+    assert.ok(inbox.options.address);
   })
 });
