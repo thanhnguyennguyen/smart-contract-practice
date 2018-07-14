@@ -4,7 +4,7 @@
   "description": "Practicing with smart contract and Ethereum network using solidity",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "nyc --reporter=clover mocha"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,9 @@
     "solc": "^0.4.24",
     "web3": "^1.0.0-beta.26",
     "webpack": "^4.12.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "nyc": "^12.0.2"
   }
 }
