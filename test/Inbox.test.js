@@ -38,7 +38,7 @@ describe('Get Accounts', () => {
     it('test setMessage', async() => {
       const NEW_MESSAGE = 'Nguyen is in blockchain technology';
       await inbox.methods.setMessage(NEW_MESSAGE)
-      .send({from: accounts[0]});
+      .send({from: accounts[0], gas: '1000000'});
       const MESSAGE = await inbox.methods.message().call();
       assert.equal(MESSAGE, NEW_MESSAGE);
     });
