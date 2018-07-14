@@ -30,7 +30,16 @@ describe('Get Accounts', () => {
   });
 
   it('test default message', async() => {
-    const message = await inbox.methods.message().call();
-    assert.equal(message, INITIAL_MESSAGE);
+    const MESSAGE = await inbox.methods.message().call();
+    assert.equal(MESSAGE, INITIAL_MESSAGE);
   });
+
+
+    it('test setMessage', async() => {
+      const NEW_MESSAGE = 'Nguyen is in blockchain technology';
+      await inbox.methods.setMessage(NEW_MESSAGE)
+      .send({from: accounts[0]});
+      const MESSAGE = await inbox.methods.message().call();
+      assert.equal(MESSAGE, NEW_MESSAGE);
+    });
 });
