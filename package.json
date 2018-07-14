@@ -4,7 +4,7 @@
   "description": "Practicing with smart contract and Ethereum network using solidity",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=clover mocha",
+    "test": "mocha",
     "test-coverage": "nyc --reporter=text-lcov mocha> coverage.lcov"
   },
   "repository": {
