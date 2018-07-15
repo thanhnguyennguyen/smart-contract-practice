@@ -14,6 +14,9 @@ contract Lottery {
     }
 
     function pickWinner() public {
+      // check if it is called by manager
+      require(msg.sender == manager);
+
       uint index = this.random() % players.length;
       players[index].transfer(this.balance);
 
