@@ -13,10 +13,7 @@ contract Lottery {
       players.push(msg.sender);
     }
 
-    function pickWinner() public {
-      // check if it is called by manager
-      require(msg.sender == manager);
-
+    function pickWinner() public restricted {
       uint index = this.random() % players.length;
       players[index].transfer(this.balance);
 
@@ -26,5 +23,11 @@ contract Lottery {
 
     function random() private view returns(uint) {
       return uint(keccak256(block.difficulty, now, players));
+    }
+
+    modifier restricted() {
+      // check if it is called by manager
+      require(msg.sender == manager);
+      _;
     }
 }
