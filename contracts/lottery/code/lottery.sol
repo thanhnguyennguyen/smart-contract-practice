@@ -16,6 +16,9 @@ contract Lottery {
     function pickWinner() public {
       uint index = this.random() % players.length;
       players[index].transfer(this.balance);
+
+      //  reset players
+      players = new address[](0);
     }
 
     function random() private view returns(uint) {
