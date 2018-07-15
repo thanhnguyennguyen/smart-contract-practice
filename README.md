@@ -13,3 +13,4 @@ Solidity data type
 <img src="https://i.imgur.com/majsyDN.png" /><br/>
 <img src="https://i.imgur.com/Yy9WIXI.png" /><br/>
 <img src="https://i.imgur.com/eL8TkKa.png" /><br/>
+<img src="https://i.imgur.com/OkIIVRb.png" /><br/>
