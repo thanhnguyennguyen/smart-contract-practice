@@ -13,9 +13,9 @@ contract Lottery {
       players.push(msg.sender);
     }
 
-    function pickWinner() public view returns(address) {
+    function pickWinner() public {
       uint index = this.random() % players.length;
-      return players[index];
+      players[index].transfer(this.balance);
     }
 
     function random() private view returns(uint) {
