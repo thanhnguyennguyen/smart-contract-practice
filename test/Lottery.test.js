@@ -68,6 +68,26 @@ describe('Test Lottery contract', ()  =>  {
     } catch(error) {
       assert(error)
     }
-
   });
+
+  it('only manager can pickWinner', async()  =>  {
+
+    try {
+      await lottery.methods.pickWinner().send({
+        from: accounts[0] // manager
+      });
+      assert(true);
+    } catch(error) {
+      assert(error)
+    }
+    try {
+      await lottery.methods.pickWinner().send({
+        from: accounts[1] // not manager
+      });
+      assert(false);
+    } catch(error) {
+      assert(error)
+    }
+  });
+
 });
