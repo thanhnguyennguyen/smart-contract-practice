@@ -7,3 +7,14 @@
 <br/>
 Travis <br/>
 [![Build Status](https://travis-ci.com/thanhnguyennguyen/smart-contract-practice.svg?branch=master)](https://travis-ci.com/thanhnguyennguyen/smart-contract-practice)
+<br/>
+Solidity data type
+<img src="https://i.imgur.com/2P3XeQR.png" /><br/>
+<img src="https://i.imgur.com/majsyDN.png" /><br/>
+<img src="https://i.imgur.com/Yy9WIXI.png" /><br/>
+<img src="https://i.imgur.com/eL8TkKa.png" /><br/>
+Global variable: msg <br/>
+<img src="https://i.imgur.com/XWEcnzk.png" /><br/>
+
+Notes<br/>
+<img src="https://i.imgur.com/OkIIVRb.png" /><br/>
