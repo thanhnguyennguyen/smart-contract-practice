@@ -25,7 +25,7 @@ contract Lottery {
 
     /* get current balance of contract */
     function getCurrentBalance() public view returns(uint) {
-      return address(this).balance;
+      return address(this).balance / (1 ether);
     }
 
     /* get number of player */
