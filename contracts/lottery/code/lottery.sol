@@ -32,6 +32,9 @@ contract Lottery {
     modifier restricted() {
       // check if it is called by manager
       require(msg.sender == manager);
+      // make sure players is not an empty list
+      require(players.length > 0);
+
       _;
     }
 }
