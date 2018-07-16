@@ -8,7 +8,7 @@ contract Lottery {
       manager = msg.sender;
     }
 
-    function getPlayers() public view retuns(address[]) {
+    function getPlayers() public view returns(address[]) {
       return players;
     }
 
@@ -18,15 +18,15 @@ contract Lottery {
     }
 
     function pickWinner() public restricted {
-      uint index = this.random() % players.length;
-      players[index].transfer(this.balance);
+      uint index = random() % players.length;
+      players[index].transfer(address(this).balance);
 
       //  reset players
       players = new address[](0);
     }
 
     function random() private view returns(uint) {
-      return uint(keccak256(block.difficulty, now, players));
+      return uint(keccak256(abi.encodePacked(block.difficulty, now, players)));
     }
 
     modifier restricted() {
