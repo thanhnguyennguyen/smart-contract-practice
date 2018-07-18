@@ -1,4 +1,4 @@
-<b>Smart Contract practices</b>
+
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/thanhnguyennguyen/smart-contract-practice/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/thanhnguyennguyen/smart-contract-practice/?branch=master)
 [![codecov](https://codecov.io/gh/thanhnguyennguyen/smart-contract-practice/branch/master/graph/badge.svg)](https://codecov.io/gh/thanhnguyennguyen/smart-contract-practice)
@@ -8,6 +8,15 @@
 Travis <br/>
 [![Build Status](https://travis-ci.com/thanhnguyennguyen/smart-contract-practice.svg?branch=master)](https://travis-ci.com/thanhnguyennguyen/smart-contract-practice)
 <br/>
+<b>Smart Contract practices</b><br/>
+Example smart contract on Rinkeby test network<br/>
+<b>Lottery game</b>  
+- Designs can be found here
+https://github.com/thanhnguyennguyen/smart-contract-practice/tree/master/contracts/lottery/design
+- Contract  url
+https://rinkeby.etherscan.io/address/0xa0a5566cb16c16384f3b7b3a3a67cbbe0bf2f137
+
+<br/><b>Solidity basic knowledge </b><br/>
 Solidity data type
 <img src="https://i.imgur.com/2P3XeQR.png" /><br/>
 <img src="https://i.imgur.com/majsyDN.png" /><br/>
