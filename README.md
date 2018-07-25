@@ -8,6 +8,7 @@
 Travis <br/>
 [![Build Status](https://travis-ci.com/thanhnguyennguyen/smart-contract-practice.svg?branch=master)](https://travis-ci.com/thanhnguyennguyen/smart-contract-practice)
 <br/>
+Docker cloud <br/>
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/?repo=https://github.com/thanhnguyennguyen/smart-contract-practice/) <br/>
 <b>Smart Contract practices</b><br/>
 Example smart contract on Rinkeby test network<br/>
