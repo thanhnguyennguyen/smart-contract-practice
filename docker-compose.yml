@@ -1,0 +1,8 @@
+version: '2'
+services:
+  lottery:
+    image: nguyennguyen/smartcontract:latest
+    ports:
+      - "10873:873"
+    command:
+      - npm run test
