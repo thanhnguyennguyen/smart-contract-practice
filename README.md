@@ -4,6 +4,8 @@
 
 # [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/?repo=https://github.com/thanhnguyennguyen/smart-contract-practice/)
 # Smart Contract practices
+# Copyright © 2018 Nguyen Nguyen
+
 ## Lottery game
 ### Designs can be found here
 https://github.com/thanhnguyennguyen/smart-contract-practice/tree/master/contracts/lottery/design
