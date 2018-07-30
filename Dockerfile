@@ -5,7 +5,8 @@ WORKDIR /app
 RUN  apk add --update \
      python \
      git \
-     bash
+     bash \
+     make
 
 # Copy the current directory contents into the container at /app
 COPY contracts /app/contracts/
