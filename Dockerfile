@@ -6,7 +6,8 @@ RUN  apk add --update \
      python \
      git \
      bash \
-     make
+     make \
+     g++
 
 # Copy the current directory contents into the container at /app
 COPY contracts /app/contracts/
