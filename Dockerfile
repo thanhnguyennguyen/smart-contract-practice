@@ -5,7 +5,6 @@ WORKDIR /app
 RUN  apk add --update \
      python \
      git \
-     bash \
      make \
      g++
 
