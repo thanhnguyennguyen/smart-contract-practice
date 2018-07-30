@@ -2,9 +2,10 @@ FROM node:8.11.3-alpine
 MAINTAINER Nguyen Nguyen <nguyenbk92@gmail.com>
 # Set the working directory to /app
 WORKDIR /app
-RUN  apk add python \
-    git \
-    bash
+RUN  apk add --update
+     python \
+     git \
+     bash
 
 # Copy the current directory contents into the container at /app
 COPY contracts /app/contracts/
