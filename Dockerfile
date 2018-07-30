@@ -4,7 +4,7 @@ MAINTAINER Nguyen Nguyen <nguyenbk92@gmail.com>
 WORKDIR /app
 RUN  apk add python \
     git \
-    bash \
+    bash
 
 # Copy the current directory contents into the container at /app
 COPY contracts /app/contracts/
