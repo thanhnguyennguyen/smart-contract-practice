@@ -1,5 +1,4 @@
-FROM node:8
-
+FROM node:8.11.3-alpine
 MAINTAINER Nguyen Nguyen <nguyenbk92@gmail.com>
 # Set the working directory to /app
 WORKDIR /app
