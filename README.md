@@ -20,6 +20,8 @@ https://rinkeby.etherscan.io/address/0xa0a5566cb16c16384f3b7b3a3a67cbbe0bf2f137
 ### ![Solidity data type 4](https://i.imgur.com/eL8TkKa.png)
 ## Global variable: msg
 ### ![Solidity global variable 1](https://i.imgur.com/XWEcnzk.png)
+## Send and Call
+### ![Send-vs-call](https://i.imgur.com/m3ji3et.jpg)
 
 ## Notes
 ### ![Solidity note 1](https://i.imgur.com/OkIIVRb.png)
