@@ -8,10 +8,10 @@ const {interface, bytecode} = require('./compile');
 
 let provider;
 
-console.log(process.argv.length);
-if (process.argv.length === 2) {
-  mnemonic = argv[0];
-  infuraUrl = argv[1];
+let args = process.argv.slice(2);
+if (args === 2) {
+  mnemonic = args[0];
+  infuraUrl = args[1];
 } else {
   const mnemonicFile = path.resolve(__dirname, 'config', 'mnemonic.txt');
   const mnemonic = fs.readFileSync(mnemonicFile, 'utf8');
