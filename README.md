@@ -90,6 +90,13 @@ Using a registry Contract to manage all contracts, then using contract name to a
 #### Withdrawal pattern ![withdrawal-pattern](https://i.imgur.com/0lYuucS.jpg)
 ![](https://i.imgur.com/m5wyFD1.jpg)
 
+# ERC-20 specification: 6 functions, 2 events
+## ![ERC-20](https://i.imgur.com/jkLhW5G.jpg)
+## ![ERC-20-2](https://i.imgur.com/IKnmPjT.jpg)
+## ![ERC-20-3](https://i.imgur.com/ZPgaJcO.jpg)
+## ![ERC-20-4](https://i.imgur.com/nJ34JFzg.jpg)
+
+https://github.com/thanhnguyennguyen/ERC20-token
 
 # web3 knowledge
 ## Send and Call
