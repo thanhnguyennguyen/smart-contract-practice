@@ -9,7 +9,7 @@ const {interface, bytecode} = require('./compile');
 let provider;
 
 let args = process.argv.slice(2);
-if (args === 2) {
+if (args.length === 2) {
   mnemonic = args[0];
   infuraUrl = args[1];
 } else {
