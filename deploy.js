@@ -1,17 +1,25 @@
 const path = require('path');
 const fs = require('fs');
 
-const mnemonicFile = path.resolve(__dirname, 'config', 'mnemonic.txt');
-const mnemonic = fs.readFileSync(mnemonicFile, 'utf8');
-
-const infuraFile = path.resolve(__dirname, 'config', 'infura.txt');
-const infuraUrl = fs.readFileSync(infuraFile, 'utf8');
 
 const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const {interface, bytecode} = require('./compile');
 
-const provider = new HDWalletProvider(
+let provider;
+
+let args = process.argv.slice(2);
+if (args.length === 2) {
+  mnemonic = args[0];
+  infuraUrl = args[1];
+} else {
+  const mnemonicFile = path.resolve(__dirname, 'config', 'mnemonic.txt');
+  const mnemonic = fs.readFileSync(mnemonicFile, 'utf8');
+
+  const infuraFile = path.resolve(__dirname, 'config', 'infura.txt');
+  const infuraUrl = fs.readFileSync(infuraFile, 'utf8');
+}
+provider = new HDWalletProvider(
   mnemonic,
   infuraUrl
  );
@@ -25,8 +33,7 @@ const deploy = async() => {
     const accounts = await web3.eth.getAccounts();
     console.log('Attempting to deploy from account ', accounts[0]);
     const result = await new web3.eth.Contract(JSON.parse(interface))
-      .deploy({data: '0x' + bytecode})
-      .send({gas: '1000000', from: accounts[0]});
+      .new({data: '0x' + bytecode, gas: '1000000', from: accounts[0]});
       console.log(interface);
       console.log('Contract deployed to ', result.options.address);
   } catch (err) {
