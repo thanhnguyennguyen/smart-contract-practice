@@ -7,7 +7,7 @@ node_js:
 script:
   - npm install
   - npm run test-coverage
-  - node deploy.js MNEMONIC INFURA
+  - node deploy.js $MNEMONIC $INFURA
 
 after_success:
   - npm install codecov
