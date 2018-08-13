@@ -21,5 +21,14 @@ https://rinkeby.etherscan.io/address/0xa0a5566cb16c16384f3b7b3a3a67cbbe0bf2f137
 ## Global variable: msg
 ### ![Solidity global variable 1](https://i.imgur.com/XWEcnzk.png)
 
-## Notes
 ### ![Solidity note 1](https://i.imgur.com/OkIIVRb.png)
+
+
+# web3 knowledge
+## Send and Call
+### ![Send-vs-call](https://i.imgur.com/m3ji3et.jpg)
+## Filter object: web3.eth.filter
+### ![filter](https://i.imgur.com/sFdgMLV.jpg)
+### Event vs filter ![event-vs-filter](https://i.imgur.com/sb1RVbI.jpg)
+
+
