@@ -8,6 +8,7 @@ const {interface, bytecode} = require('./compile');
 
 let provider;
 
+console.log(process.argv.length);
 if (process.argv.length === 2) {
   mnemonic = argv[0];
   infuraUrl = argv[1];
