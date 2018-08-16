@@ -32,8 +32,8 @@ String vss bytes ![string-vs-bytes](https://i.imgur.com/wr8vKTM.jpg)
 ![function](https://i.imgur.com/1536CLf.jpg)
 ### Function visibilities and modifier ![func-visibilities](https://i.imgur.com/alCH2ma.jpg)
 ### Return multiple values ![func-return-multiple-values](https://i.imgur.com/OxoTTjh.jpg)
-### To assign results from multiple returns function to variable, we use tupple ![tupple](https://i.imgur.com/undefined.jpg)
-### Function overloading ![func-overloading](func-overloading)
+### To assign results from multiple returns function to variable, we use tupple ![tupple](https://i.imgur.com/xNsx5MU.jpg)
+### Function overloading ![func-overloading](https://i.imgur.com/rR5LKdh.jpg)
 Constructor overloading is not supported
 
 ## Variable initialization
