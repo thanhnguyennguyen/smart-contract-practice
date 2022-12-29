@@ -26,9 +26,9 @@
   "dependencies": {
     "node-gyp": "^3.7.0",
     "solc": "^0.4.24",
-    "truffle-hdwallet-provider": "0.0.6",
+    "truffle-hdwallet-provider": "1.0.17",
     "web3": "^1.0.0-beta.26",
-    "webpack": "^4.12.0",
+    "webpack": "^5.75.0",
     "websocket": "^1.0.26",
     "fs-extra": "^3.0"
   },
